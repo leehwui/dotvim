@@ -29,6 +29,8 @@ Plugin 'mattn/emmet-vim'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'vim-scripts/taglist.vim'
+
 call vundle#end()
 
 filetype plugin indent on
