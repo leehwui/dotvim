@@ -21,6 +21,15 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
+
+au FileType html setl sw=2 sts=2 expandtab
+au FileType scss setl sw=2 sts=2 expandtab
+au FileType ruby setl sw=2 sts=2 expandtab
+au FileType python setl sw=4 sts=4 expandtab
+au FileType eruby setl sw=2 sts=2 expandtab
+au FileType css setl sw=2 sts=2 expandtab
+
+
 call vundle#begin()
 
 "Plugin 'gmarik/Vundle.vim'
@@ -35,9 +44,3 @@ call vundle#end()
 
 filetype plugin indent on
 
-au FileType html setl sw=2 sts=2 expandtab
-au FileType scss setl sw=2 sts=2 expandtab
-au FileType ruby setl sw=2 sts=2 expandtab
-au FileType python setl sw=4 sts=4 expandtab
-au FileType eruby setl sw=2 sts=2 expandtab
-au FileType css setl sw=2 sts=2 expandtab
