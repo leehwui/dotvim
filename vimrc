@@ -40,6 +40,8 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'vim-scripts/taglist.vim'
 
+Plugin 'tpope/vim-surround'
+
 call vundle#end()
 
 filetype plugin indent on
