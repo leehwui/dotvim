@@ -42,6 +42,14 @@ Plugin 'vim-scripts/taglist.vim'
 
 Plugin 'tpope/vim-surround'
 
+Plugin 'MarcWeber/vim-addon-mw-utils'
+
+Plugin 'tomtom/tlib_vim'
+
+Plugin 'garbas/vim-snipmate'
+
+Plugin 'honza/vim-snippets'
+
 call vundle#end()
 
 filetype plugin indent on
