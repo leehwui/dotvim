@@ -13,7 +13,7 @@ set showmatch
 set tw=78
 set fo+=mB
 set lbr
-
+set clipboard=unnamed
 
 let Tlist_Use_Right_Window=1
 
