@@ -10,7 +10,7 @@ set background=light
 colorscheme murphy
 set hlsearch
 set showmatch
-set tw=78
+set tw=79
 set fo+=mB
 set lbr
 set wrap
@@ -50,6 +50,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
 Plugin 'honza/vim-snippets'
+
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 
