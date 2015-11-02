@@ -9,7 +9,7 @@ set cindent
 set nu
 set expandtab
 set background=dark
-colorscheme solarized
+colorscheme molokai
 set hlsearch
 set showmatch
 set tw=79
