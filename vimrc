@@ -7,7 +7,7 @@ set cindent
 set nu
 set expandtab
 set background=light
-colorscheme murphy
+colorscheme desert 
 set hlsearch
 set showmatch
 set tw=79
