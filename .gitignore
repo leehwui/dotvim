@@ -3,3 +3,4 @@
 tags
 bundle/*
 !bundle/Vundle.vim
+.DS_STORE

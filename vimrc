@@ -1,4 +1,6 @@
+syntax enable
 syntax on
+
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
@@ -6,8 +8,8 @@ set autoindent
 set cindent
 set nu
 set expandtab
-set background=light
-colorscheme desert 
+set background=dark
+colorscheme solarized
 set hlsearch
 set showmatch
 set tw=79
