@@ -1,6 +1,10 @@
 syntax enable
 syntax on
+<<<<<<< HEAD
 set t_Co=256
+=======
+
+>>>>>>> bfd59a1eef534863ac0c308f525da58b0038c5a0
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
@@ -16,6 +20,7 @@ set tw=78
 set fo+=mB
 set wrap
 set lbr
+set wrap
 set clipboard=unnamed
 
 let Tlist_Use_Right_Window=1
