@@ -1,10 +1,6 @@
 syntax enable
 syntax on
-<<<<<<< HEAD
 set t_Co=256
-=======
-
->>>>>>> bfd59a1eef534863ac0c308f525da58b0038c5a0
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
