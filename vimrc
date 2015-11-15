@@ -1,4 +1,6 @@
+syntax enable
 syntax on
+set t_Co=256
 set tabstop=8
 set softtabstop=4
 set shiftwidth=4
@@ -6,12 +8,13 @@ set autoindent
 set cindent
 set nu
 set expandtab
-set background=light
-colorscheme murphy
+set background=dark
+colorscheme molokai
 set hlsearch
 set showmatch
-set tw=79
+set tw=78
 set fo+=mB
+set wrap
 set lbr
 set clipboard=unnamed
 
@@ -51,6 +54,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
 Plugin 'bling/vim-airline'
+
+Plugin 'jistr/vim-nerdtree-tabs'
 
 call vundle#end()
 
