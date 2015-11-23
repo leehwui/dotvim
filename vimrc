@@ -23,6 +23,9 @@ let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
 
 let Tlist_Use_Right_Window=1
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Auto_Open=1
 
 set nocompatible
 filetype off
