@@ -38,7 +38,7 @@ au FileType ruby setl sw=2 sts=2 expandtab
 au FileType python setl sw=4 sts=4 expandtab
 au FileType eruby setl sw=2 sts=2 expandtab
 au FileType css setl sw=2 sts=2 expandtab
-au FileType js setl sw=2 sts=2 expandtab
+au FileType javascript setl sw=2 sts=2 expandtab
 
 
 call vundle#begin()
@@ -65,7 +65,7 @@ Plugin 'bling/vim-airline'
 
 Plugin 'jistr/vim-nerdtree-tabs'
 
-Plugin 'moll/vim-node'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
