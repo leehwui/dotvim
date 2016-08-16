@@ -40,6 +40,7 @@ au FileType eruby setl sw=2 sts=2 expandtab
 au FileType css setl sw=2 sts=2 expandtab
 au FileType javascript setl sw=2 sts=2 expandtab
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.vue set filetype=html
 
 call vundle#begin()
 
