@@ -41,6 +41,7 @@ au FileType python setl sw=4 sts=4 expandtab
 au FileType eruby setl sw=2 sts=2 expandtab
 au FileType css setl sw=2 sts=2 expandtab
 au FileType javascript setl sw=2 sts=2 expandtab
+au FileType less setl sw=2 sts=2 expandtab
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.vue set filetype=html
 
