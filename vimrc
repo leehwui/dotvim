@@ -18,6 +18,7 @@ set wrap
 set lbr
 set wrap
 set clipboard=unnamed
+set backspace=indent,eol,start
 
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
@@ -51,6 +52,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 
 au FileType html setl sw=2 sts=2 expandtab
+au FileType php setl sw=4 sts=4 expandtab
 au FileType scss setl sw=2 sts=2 expandtab
 au FileType ruby setl sw=2 sts=2 expandtab
 au FileType python setl sw=4 sts=4 expandtab
@@ -85,6 +87,8 @@ Plugin 'bling/vim-airline'
 Plugin 'jistr/vim-nerdtree-tabs'
 
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 
