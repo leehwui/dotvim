@@ -27,9 +27,11 @@ let Tlist_Use_Right_Window=1
 let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 "let Tlist_Auto_Open=1
+let mapleader=","
 
+" customized keyboard shortcuts:
 
-
+" short cuts for cscope:
 nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
@@ -38,6 +40,12 @@ nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+" jump to next grep result, works with vimgrep
+nmap <leader>n :cn<CR>
+nmap <leader>q :q<CR>
+nmap <leader>w :w<CR>
+nmap <leader>s :vimgrep \
 
 
 if filereadable("cscope.out")
