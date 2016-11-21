@@ -19,6 +19,7 @@ set lbr
 set wrap
 set clipboard=unnamed
 set backspace=indent,eol,start
+set vb t_vb=
 
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
@@ -40,11 +41,11 @@ nmap <C-\>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 
-if filereadable("cscope.out")
-    cs add cscope.out
-elseif $CSCOPE_DB  != ""
-    cs add $CSCOPE_DB
-endif
+"if filereadable("cscope.out")
+"    cs add cscope.out
+"elseif $CSCOPE_DB  != ""
+"    cs add $CSCOPE_DB
+"endif
 
 set nocompatible
 filetype off
