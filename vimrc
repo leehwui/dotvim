@@ -46,14 +46,14 @@ nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>n :cn<CR>
 nmap <leader>q :q<CR>
 nmap <leader>w :w<CR>
-nmap <leader>s :vimgrep \
+nmap <leader>s :vimgrep /
 
 
-"if filereadable("cscope.out")
-"    cs add cscope.out
-"elseif $CSCOPE_DB  != ""
-"    cs add $CSCOPE_DB
-"endif
+if filereadable("cscope.out")
+    cs add cscope.out
+elseif $CSCOPE_DB  != ""
+    cs add $CSCOPE_DB
+endif
 
 set nocompatible
 filetype off
