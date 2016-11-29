@@ -19,6 +19,7 @@ set lbr
 set clipboard=unnamed
 set backspace=indent,eol,start
 set vb t_vb=
+set mouse=a
 
 let mapleader=","
 let g:nerdtree_tabs_open_on_console_startup=1
