@@ -12,15 +12,15 @@ set background=dark
 colorscheme molokai
 set hlsearch
 set showmatch
-set tw=78
+set wrap
+set textwidth=80
 set fo+=mB
-set wrap
 set lbr
-set wrap
 set clipboard=unnamed
 set backspace=indent,eol,start
 set vb t_vb=
 
+let mapleader=","
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
 
@@ -29,7 +29,6 @@ let Tlist_Show_One_File=1
 let Tlist_Exit_OnlyWindow=1
 "let Tlist_Auto_Open=1
 let g:airline_powerline_fonts = 1
-let mapleader=","
 let g:airline_theme = 'dark'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
@@ -79,14 +78,14 @@ au FileType eruby setl sw=2 sts=2 expandtab
 au FileType css setl sw=2 sts=2 expandtab
 au FileType javascript setl sw=2 sts=2 expandtab
 au FileType less setl sw=2 sts=2 expandtab
-au BufNewFile,BufRead *.ejs set filetype=html
-au BufNewFile,BufRead *.vue set filetype=html
 
 call vundle#begin()
 
 "Plugin 'gmarik/Vundle.vim'
 
 Plugin 'mattn/emmet-vim'
+
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'scrooloose/nerdtree'
 
@@ -103,8 +102,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
 Plugin 'vim-airline/vim-airline'
-
-Plugin 'bling/vim-bufferline'
 
 Plugin 'tpope/vim-fugitive'
 
