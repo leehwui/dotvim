@@ -59,6 +59,9 @@ nmap <leader>s :vimgrep /
 nmap <leader>p :set paste<CR>
 nmap <leader>P :set paste<CR>
 
+" YCM shortcuts
+nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>jl :YcmCompleter GoToDeclaration<CR>
 
 if filereadable("cscope.out")
     cs add cscope.out
@@ -81,6 +84,7 @@ au FileType css setl sw=2 sts=2 expandtab
 au FileType javascript setl sw=2 sts=2 expandtab
 au FileType less setl sw=2 sts=2 expandtab
 au FileType sql setl sw=2 sts=2 expandtab
+au FileType vue setl sw=2 sts=2 expandtab
 
 call vundle#begin()
 
