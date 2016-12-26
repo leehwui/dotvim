@@ -34,6 +34,8 @@ let g:airline_theme = 'dark'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 
+let php_folding=1
+
 if !exists('g:airline_symbols')
       let g:airline_symbols = {}
 endif
@@ -74,7 +76,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 
 au FileType html setl sw=2 sts=2 expandtab
-au FileType php setl sw=4 sts=4 expandtab
+au FileType php setl sw=4 sts=4 expandtab foldmethod=syntax
 au FileType scss setl sw=2 sts=2 expandtab
 au FileType ruby setl sw=2 sts=2 expandtab
 au FileType python setl sw=4 sts=4 expandtab
@@ -118,6 +120,7 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'posva/vim-vue'
 
+Plugin 'shawncplus/phpcomplete.vim'
 
 call vundle#end()
 
