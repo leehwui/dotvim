@@ -52,6 +52,7 @@ nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
+
 " jump to next grep result, works with vimgrep
 nmap <leader>n :cn<CR>
 nmap <leader>q :q<CR>
@@ -84,6 +85,7 @@ au FileType eruby setl sw=2 sts=2 expandtab
 au FileType css setl sw=2 sts=2 expandtab
 au FileType javascript setl sw=2 sts=2 expandtab
 au FileType less setl sw=2 sts=2 expandtab
+au FileType sql setl sw=2 sts=2 expandtab
 au FileType vue setl sw=2 sts=2 expandtab
 
 call vundle#begin()
