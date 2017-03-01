@@ -20,6 +20,7 @@ set clipboard=unnamed
 set backspace=indent,eol,start
 set vb t_vb=
 set mouse=a
+set grepprg=ack\ -k
 
 let mapleader=","
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -87,42 +88,30 @@ au FileType javascript setl sw=2 sts=2 expandtab
 au FileType less setl sw=2 sts=2 expandtab
 au FileType sql setl sw=2 sts=2 expandtab
 au FileType vue setl sw=2 sts=2 expandtab
+au FileType yml setl sw=2 sts=2 expandtab
+
+au BufRead,BufNewFile  *.wxss set filetype=css
+au BufRead,BufNewFile  *.wxml set filetype=html
 
 call vundle#begin()
 
 "Plugin 'gmarik/Vundle.vim'
-
 Plugin 'mattn/emmet-vim'
-
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'vim-scripts/taglist.vim'
-
 Plugin 'tpope/vim-surround'
-
 Plugin 'MarcWeber/vim-addon-mw-utils'
-
 Plugin 'tomtom/tlib_vim'
-
 Plugin 'garbas/vim-snipmate'
-
 Plugin 'honza/vim-snippets'
-
 Plugin 'vim-airline/vim-airline'
-
 Plugin 'tpope/vim-fugitive'
-
 Plugin 'vim-airline/vim-airline-themes'
-
 Plugin 'jistr/vim-nerdtree-tabs'
-
 Plugin 'pangloss/vim-javascript'
-
 Plugin 'posva/vim-vue'
-
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'vim-scripts/VisIncr'
 
 call vundle#end()
 
