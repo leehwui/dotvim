@@ -100,6 +100,7 @@ set vb t_vb=
 set mouse=a
 set path+=**
 set wildmenu
+set grepprg=ack\ -k
 
 let mapleader=","
 let g:nerdtree_tabs_open_on_console_startup=1
