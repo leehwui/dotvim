@@ -59,6 +59,11 @@ Plugin 'posva/vim-vue'
 Plugin 'shawncplus/phpcomplete.vim'
 
 Plugin 'mileszs/ack.vim'
+
+Plugin 'jwalton512/vim-blade'
+
+Plugin 'StanAngeloff/php.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -101,6 +106,7 @@ set mouse=a
 set path+=**
 set wildmenu
 set grepprg=ack\ -k
+setglobal complete-=i
 
 let mapleader=","
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -115,7 +121,7 @@ let g:airline_theme = 'dark'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 
-let php_folding=1
+"let php_folding=1
 
 if !exists('g:airline_symbols')
       let g:airline_symbols = {}
@@ -153,12 +159,10 @@ elseif $CSCOPE_DB  != ""
 endif
 
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
 
 
 au FileType html setl sw=2 sts=2 expandtab
-au FileType php setl sw=4 sts=4 expandtab foldmethod=syntax
+au FileType php setl sw=4 sts=4 expandtab foldmethod=manual
 au FileType scss setl sw=2 sts=2 expandtab
 au FileType ruby setl sw=2 sts=2 expandtab
 au FileType python setl sw=4 sts=4 expandtab
@@ -173,3 +177,4 @@ au FileType wxss setl sw=2 sts=2 expandtab
 
 au BufRead,BufNewFile *.wxml setfiletype html 
 au BufRead,BufNewFile *.wxss setfiletype css
+au BufRead,BufNewFile *.blade.php setfiletype html
