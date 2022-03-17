@@ -121,6 +121,8 @@ let g:airline_theme = 'dark'
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1
 
+let g:snipMate = { 'snippet_version' : 1 }
+
 "let php_folding=1
 
 if !exists('g:airline_symbols')
