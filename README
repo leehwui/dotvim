@@ -5,3 +5,4 @@ cd ~
  cp ~/.vim/vimrc ~/.vimrc
 vim
 :BundleInstall
+'''
